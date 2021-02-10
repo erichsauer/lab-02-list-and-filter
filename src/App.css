@@ -3,13 +3,30 @@
 }
 
 img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
-.image-div {
+.creatureDiv {
   display: flex;
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px gray;
+  margin: 10px;
+}
+
+body, html {
+  width: 100%;
+}
+
+.results-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label {
+
 }
