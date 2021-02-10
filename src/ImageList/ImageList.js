@@ -1,11 +1,16 @@
 import React from 'react'
-import ImageItem from './ImageItem/ImageItem'
 
 export default class ImageList extends React.Component {
     render() {
+        const renderedImages = this.props.filteredCreatures.map((singleCreature) => {
+            return <div key={Math.random()} className='creatureDiv'>
+                {singleCreature.title}
+                <img key={singleCreature.title} alt={singleCreature.description} src={singleCreature.url} keyword={singleCreature.keyword}></img>
+            </div>
+        });
         return (
-            <div>
-                <ImageItem hornedCreatures={this.props.hornedCreatures}/>
+            <div className='results-div'>
+                {renderedImages}
             </div>
         )
     }
