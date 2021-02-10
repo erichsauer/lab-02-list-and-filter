@@ -5,8 +5,7 @@ export default class ImageList extends React.Component {
     render() {
         return (
             <div>
-                Image List has {this.props.hornedCreatures.length} items.
-            <ImageItem />
+                <ImageItem hornedCreatures={this.props.hornedCreatures}/>
             </div>
         )
     }

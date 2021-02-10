@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.image-div {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  flex-direction: column;
+}
