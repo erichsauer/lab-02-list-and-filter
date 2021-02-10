@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 .App {
   text-align: center;
+}
+
+.App-header {
+  height: 100%;
+  color: darkmagenta;
+  font-family: 'Satisfy', 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 0px;
 }
 
 img {
   max-width: 100px;
   max-height: 100px;
+  border: solid 2px white;
+  margin-top: 5px;
+  border-radius: 10px;
 }
 
 .creatureDiv {
@@ -14,12 +30,16 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid 1px gray;
+  border: solid 2px darkmagenta;
   margin: 10px;
+  background-color: hotpink;
+  color: white;
+  border-radius: 10px;
 }
 
 body, html {
   width: 100%;
+  background-color: lightpink;
 }
 
 .results-div {
@@ -28,5 +48,16 @@ body, html {
 }
 
 .label {
+  margin-bottom: 10px;
+  color: darkmagenta;
+}
 
+select {
+  margin-left: 10px;
+  background-color: lightpink;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border: solid 1px white;
 }
